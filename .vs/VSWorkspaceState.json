@@ -4,7 +4,10 @@
     "\\blog",
     "\\blog\\templates",
     "\\blog\\templates\\blog",
-    "\\templates"
+    "\\templates",
+    "\\user",
+    "\\user\\templates",
+    "\\user\\templates\\user"
   ],
   "SelectedNode": "\\blog\\templates\\blog\\blogs_with_type.html",
   "PreviewInSolutionExplorer": false
