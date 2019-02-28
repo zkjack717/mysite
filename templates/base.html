@@ -24,15 +24,15 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="{% block nav_home_active %}{% endblock %}"><a href="/">Home</a></li>
-                    <li class="{% block nav_blog_active %}{% endblock %}"><a href="{% url 'blog_list' %}">Blog List</a></li>                  
+                    <li class="{% block nav_home_active %}{% endblock %}"><a href="/">首页</a></li>
+                    <li class="{% block nav_blog_active %}{% endblock %}"><a href="{% url 'blog_list' %}">博客列表</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if not user.is_authenticated %}
-                    <li><a href="{% url 'login' %}?from={{ request.get_full_path }}">login</a></li>
-                    <li><a href="{% url 'register' %}?from={{ request.get_full_path }}">register</a></li>
+                    <li><a href="{% url 'login' %}?from={{ request.get_full_path }}">登陆</a></li>
+                    <li><a href="{% url 'register' %}?from={{ request.get_full_path }}">注册</a></li>
                     {% else %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +64,7 @@
                     <form id="login_medal_form" action="" method="POST">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">login</h4>
+                            <h4 class="modal-title">小窗口登陆</h4>
                         </div>
                         <div class="modal-body">
                             {% csrf_token %}
@@ -75,8 +75,8 @@
                             <span id="login_medal_tip" class="text-danger"></span>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">login</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                            <button type="submit" class="btn btn-primary">登陆</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                         </div>
                     </form>
                 </div>

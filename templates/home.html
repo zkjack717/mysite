@@ -15,11 +15,11 @@ active
 {% endblock %}
 
 {% block content %}
-<h3 class="home-content"> Welcome to my site!Have a look!</h3>
+<h3 class="home-content">欢迎来到我的博客网站！随便看！</h3>
 <!-- 图表容器 DOM -->
 <div id="container"></div>
 <div class="hot-data">
-    <h3>today hot blog</h3>
+    <h3>今日热门博客</h3>
     <ul>
         {% for hot_data in today_hot_data %}
         <li>
@@ -32,7 +32,7 @@ active
         <p>-- nothing --</p>
         {% endfor %}
     </ul>
-    <h3>yesterday hot blog</h3>
+    <h3>昨日热门博客</h3>
     <ul>
         {% for hot_data in yesterday_hot_data %}
         <li>
@@ -45,7 +45,7 @@ active
         <p>-- nothing --</p>
         {% endfor %}
     </ul>
-    <h3>7 days hot blog</h3>
+    <h3>本周热门博客</h3>
     <ul>
         {% for hot_blog in hot_blogs_7_days %}
         <li>
