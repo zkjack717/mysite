@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'read_statistics',
     'comment',
     'likes',
-    'user'
+    'user',
+    'myweb',
 ]
 
 MIDDLEWARE = [

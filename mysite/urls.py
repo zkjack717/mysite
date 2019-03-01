@@ -28,6 +28,7 @@ urlpatterns = [
     path('comment/', include('comment.urls')),
     path('likes/', include('likes.urls')),
     path('user/', include('user.urls')),
+    path('myweb/', include('myweb.urls')),
 
 ]
 
